@@ -1,5 +1,4 @@
-﻿using System.Windows;
-using System.Windows.Controls;
+using System.Windows;
 
 namespace ControlPractice
 {
@@ -11,13 +10,6 @@ namespace ControlPractice
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            var tb = this.FindName("MyTextBox") as TextBox;
-            var label = this.FindName("MyLabel") as Label;
-            label!.Content = $"Hello,{tb!.Text}!";
         }
     }
 }
