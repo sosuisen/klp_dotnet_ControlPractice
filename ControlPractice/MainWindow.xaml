@@ -1,0 +1,21 @@
+﻿<Window x:Class="ControlPractice.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ControlPractice"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="183" Width="403">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="337*"/>
+            <ColumnDefinition Width="13*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="MyLabel" Content="" HorizontalAlignment="Left" Margin="143,0,0,0" VerticalAlignment="Center"/>
+        <Button Content="Click here" HorizontalAlignment="Left" Margin="284,26,0,0" VerticalAlignment="Top" Click="Button_Click" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="MyTextBox" HorizontalAlignment="Left" Margin="143,28,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" />
+        <Label Content="Enter your name" HorizontalAlignment="Left" Margin="26,20,0,0" VerticalAlignment="Top"/>
+        <Label Content="Answer:" HorizontalAlignment="Left" Margin="40,0,0,0" VerticalAlignment="Center"/>
+
+    </Grid>
+</Window>
