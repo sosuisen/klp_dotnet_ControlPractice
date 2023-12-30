@@ -1,4 +1,4 @@
-﻿using System.Windows;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace ControlPractice
@@ -15,8 +15,8 @@ namespace ControlPractice
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var tb = this.FindName("MyTextBox") as TextBox;
-            var label = this.FindName("MyLabel") as Label;
+            var tb = FindName("MyTextBox") as TextBox;
+            var label = FindName("MyLabel") as Label;
             label!.Content = $"Hello,{tb!.Text}!";
         }
     }
